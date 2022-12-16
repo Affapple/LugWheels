@@ -22,8 +22,9 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="services.html">Services</a></li>
-                    <li><a class="dropdown-item" href="clientes.css">Home</a></li>
-                    <li><a class="dropdown-item" href="#">Localization</a></li>
+                    <li><a class="dropdown-item" href="clientes.html">Home</a></li>
+                    <li><a class="dropdown-item" href="#">Location</a></li>
+                    <li><a class="dropdown-item" href="AppIndex.html">Log Out</a></li>                    
                 </ul>
             </ul>
         </div>
@@ -49,7 +50,10 @@
                                 <a class="nav-link" href="services.html">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Localization</a>
+                                <a class="nav-link" href="#">Location</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="AppIndex.html">Log Out</a>
                             </li>
                         </ul>
                     </div>
@@ -103,7 +107,7 @@
                             </select>
                         </div>
                     </div>
-                    <button class="btn btn-primary mt-3" onclick="publishToTable()">SEND</button>
+                    <button class="btn btn-primary mt-3" onclick="publishToTable()" data-bs-dismiss="modal" aria-label="Close">SEND</button>
                 </div>
             </div>
           </div>
@@ -137,43 +141,8 @@
                 <i class="fa fa-heart" aria-hidden="true"></i>
             </a>
         </div>
-    </nav>
-    <script>
-        function publishToTable() {
-            const name = document.getElementById('fullName1').value;
-            const bags = document.getElementById('nBags1').value;
-            const pdate = document.getElementById('pickDate1').value;
-            const pplace = document.getElementById('pickPlace1').value;
-            const ddate = document.getElementById('dropDate1').value;
-            const dplace = document.getElementById('dropPlace1').value;
-            if (name && bags && pdate && pplace && ddate && dplace) {
-                const tableElement = document.getElementById('table');
-                const trElement = document.createElement('tr');
-                const tbodyElement = document.createElement('tbody');
-                const nameEle = document.createElement('td');
-                const bagsEle = document.createElement('td');
-                const pdateEle = document.createElement('td');
-                const pplaceEle = document.createElement('td');
-                const ddateEle = document.createElement('td');
-                const dplaceEle = document.createElement('td');
-                nameEle.innerHTML = name;
-                bagsEle.innerHTML = bags;
-                pdateEle.innerHTML = pdate;
-                pplaceEle.innerHTML = pplace;
-                ddateEle.innerHTML = ddate;
-                dplaceEle.innerHTML = dplace;
-                trElement.appendChild(nameEle);
-                trElement.appendChild(bagsEle);
-                trElement.appendChild(pdateEle);
-                trElement.appendChild(pplaceEle);
-                trElement.appendChild(ddateEle);
-                trElement.appendChild(dplaceEle);
-                tbodyElement.appendChild(trElement);
-                tableElement.appendChild(tbodyElement);
-            }
-        }
-    </script>
-    <script src="services.js"></script>
+    </nav>  
+    <script src="/js/services.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
