@@ -1,0 +1,24 @@
+.formcontrol:focus {
+    box-shadow : none;
+    border-color:blue
+    
+}
+
+.profile-button {
+    background: grey;
+    box-shadow: none;
+    border : none
+}
+.profile-button:hover {
+    background: cyan
+}
+
+.profile-button:focus {
+    background: cyan;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: cyan;
+    box-shadow: none
+}

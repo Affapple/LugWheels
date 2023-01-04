@@ -1,0 +1,5 @@
+.border-right {
+    border-right: var(--bs-border-width)
+                  var(--bs-border-style)
+                  var(--bs-border-color) !important;
+}

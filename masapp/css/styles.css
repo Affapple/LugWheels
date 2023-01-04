@@ -1,0 +1,26 @@
+.container {
+  display:grid;
+  grid-auto-flow: column;
+  grid-auto-columns:50%; /*Tamanho dos cards*/
+  gap: 20px;
+  overflow-x:auto;
+  overscroll-behavior-inline: contain;
+}
+.imgHotel{
+  /* height:100%; Nao passar de 100% porque aparece barra vertical */
+  width:100%;
+  aspect-ratio: 13/ 10;
+  border-radius: 10%;
+  border: 15px;
+  height: 25vh;
+}
+.hotelDesc{
+  bottom:0;
+  text-align: center;
+}
+
+.card:hover{
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+

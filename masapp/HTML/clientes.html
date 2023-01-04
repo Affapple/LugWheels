@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.cdnfonts.com/css/sensation" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="../CSS/clientes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-color: #2E2E2E; margin: 0;">
+    <div class="row col-12 text-center mt-3" style="padding-left: 0px;margin:0px; display: flex-row; ">
+        <div class="container col-2 ms-3" style="display: flex; justify-content: center;margin: 0px;">
+            <a href="Conta.html" style="color: whitesmoke; font-size: 2.5rem;">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="col-4 mt-4 text-center "
+            style="margin-top: 0.2rem; display: inline-block;position: absolute;left:30%;">
+            <a style="font-family:'Sansation',sans-serif;" class="portugal me-5 pe-4">LugWheels</a>
+        </div>
+        <div class="container col-3 mt-2"
+            style="float: right; margin-left: 1rem; margin-right: 0px;padding: 0px;position: absolute;left: 72%;">
+            <ui style="text-decoration: none;">
+                <button style="font-size: 2.3rem;padding-right: 0px; color: whitesmoke;"
+                    class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse"
+                    data-bs-target="#account-collapse" aria-expanded="true">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <div class="collapse" id="account-collapse" >
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"  style="z-index: 1; position: relative;">
+                        <li><a href="services.html"
+                                class="link-dark d-inline-flex text-decoration-none rounded">Services</a></li>
+                        <li><a href="Login.html" class="link-dark d-inline-flex text-decoration-none rounded">Sign
+                                out</a></li>
+                    </ul>
+                </div>
+            </ui>
+        </div>
+    </div>
+    <div class="container-fluid col-12">
+        <div class="mx-auto mt-4 text-center">
+            <h4 class="portugal" style="color: gray;">
+                Available Airports
+            </h4>
+        </div>
+    </div>
+    <div class="row mt-4 mx-auto text-center col-12" >
+        <div class="container col-6">
+            <div style="position:relative">
+                <a role="button" id="Sá_Carneiro" class="aeroporto">
+                    <i class="fa fa-heart save saveAero" id="favourite_Sá_Carneiro" type="Aeroporto"></i>
+                    <img src="../Images/sá carneiro.jpg" style="height: 7rem; width: 10rem; border-radius: 10%;"
+                        class="mb-1">
+                </a>
+                <label for="Sá_Carneiro" onclick="$('#Sá_Carneiro').click()">
+                    <h5 style="color: gray;font-size: large;">
+                        Francisco Sá Carneiro
+                    </h5>
+                </label>
+            </div>
+        </div>
+        <div class="container col-6">
+            <div style="position:relative" style="z-index:-1">
+                <a role="button" id="Humberto_Delgado" class="aeroporto">
+                    <i class="fa fa-heart save saveAero" id="favourite_Humberto_Delgado" type="Aeroporto"></i>
+                    <img src="../Images/humb.jpg" style="height: 7rem; width: 10rem; border-radius: 10%;" class="mb-1">
+                </a>
+                <label for="Humberto_Delgado" style="color: gray;" onclick="$('#Humberto_Delgado').click()">
+                    <h5 style="color: gray; font-size: large;">
+                        Humberto Delgado
+                    </h5>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row col-12 ver">
+            <div class="mt-5">
+                <h4
+                    style="color: gray; float: left;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    Popular Destinations
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mt-3">
+        <div class="box snaps-inline">
+            <div class="card hotel" style="border-radius: 10%; " id='Radisson' >
+                <img class="imgHotel" src="../Images/Radisson.png" alt="Hotel Tivoli"
+                    style="border-radius: 10%; height: 25vh;">
+                <rect width="100%" height="100%" fill="#777"> </rect>
+                <div class="container">
+                    <i class="fa fa-heart save" id="favourite_Radisson" type="Hotel"></i>
+                    <div class="text-center carousel-caption text-start">
+                        <h1 class="portugal mb-3 megasombra">Radisson Blu Hotel</h1>
+                        <p class="megasombra">Lisboa, calm place</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card hotel" style="border-radius: 10%;" id='Novotel'>
+                <img class="imgHotel" src="../Images/Novotel.jpg" alt="Hotel Tivoli"
+                    style="border-radius: 10%; height: 25vh;">
+                <rect width="100%" height="100%" fill="#777"> </rect>
+                <div class="container">
+                    <i class="fa fa-heart save" id="favourite_Novotel" type="Hotel"></i>
+                    <div class="text- enter carousel-caption text-start">
+                        <h1 class="portugal megasombra">Novotel</h1>
+                        <p class="megasombra">Lisboa, familiar atmosphere</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card hotel" style="border-radius: 10%;" id='SeaPorto' >
+                <img class="imgHotel" src="../Images/seahotel.jpg" alt="Hotel Tivoli"
+                    style="border-radius: 10%; height: 25vh;">
+                <rect width="100%" height="100%" fill="#777"> </rect>
+                <div class="container">
+                    <i class="fa fa-heart save" id="favourite_SeaPorto" type="Hotel"></i>
+                    <div class="text-center carousel-caption text-start">
+                        <h1 class="portugal megasombra">Sea Porto Hotel</h1>
+                        <p class="megasombra">Matosinhos, sea inspired</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card hotel" style="border-radius: 10%; " id='Pestana'>
+                <img class="imgHotel" src="../Images/Pestana CR7.png" alt="Hotel Tivoli"
+                    style="border-radius: 10%; height: 25vh;">
+                <rect width="100%" height="100%" fill="#777"> </rect>
+                <div class="container">
+                    <i class="fa fa-heart save" id="favourite_Pestana" type="Hotel"></i>
+                    <div class="text-center carousel-caption text-start">
+                        <h1 class="portugal megasombra">Pestana CR7</h1>
+                        <p class="megasombra">Lisboa, well located</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card hotel" style="border-radius: 10%; " id='HotelAS' type="Hotel">
+                <img class="imgHotel" src="../Images/Hotel AS.jpg" alt="Hotel AS"
+                    style="border-radius: 10%; height: 25vh;">
+                <rect width="100%" height="100%" fill="#777"> </rect>
+                <div class="container">
+                    <i class="fa fa-heart save" id="favourite_HotelAS" type="Hotel"></i>
+                    <div class="text-center carousel-caption text-start">
+                        <h1 class="portugal megasombra">Hotel AS</h1>
+                        <p class="megasombra">Lisboa, has a meeting room</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card hotel" style="border-radius: 10%; " id='Tivoli' type="Hotel">
+                <img class="imgHotel" src="../Images/Tivoli.jpg" alt="Hotel Tivoli"
+                    style="border-radius: 10%; height: 25vh;">
+                <rect width="100%" height="100%" fill="#777"> </rect>
+                <div class="container">
+                    <i class="fa fa-heart save" id="favourite_Tivoli" type="Hotel"></i>
+                    <div class="text-center carousel-caption text-start">
+                        <h1 class="portugal megasombra">Tivoli Oriente</h1>
+                        <p class="megasombra">Lisboa, located on the center</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card hotel" style="border-radius: 10%; " id='Marriot' type="Hotel">
+                <img class="imgHotel" src="../Images/marriot.jpg" alt="Hotel Marriot"
+                    style="border-radius: 10%; height: 25vh;">
+                <rect width="100%" height="100%" fill="#777"> </rect>
+                <div class="container">
+                    <i class="fa fa-heart save" id="favourite_Marriot" type="Hotel"></i>
+                    <div class="text-center carousel-caption text-start">
+                        <h1 class="portugal megasombra">Marriot Hotel</h1>
+                        <p class="megasombra">Lisboa, urban resort</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5" style="display: flex;justify-content: center;">
+        <a id="pedido" class="btn btn-primary btn-circle btn-grad d-flex align-items-center justify-content-center"
+            style="width: 60vw; height: 10vh;">
+
+            <h1 class="portugal" style="font-size:25px; line-height: 30px;">LugWheels!</h1>
+        </a>
+
+    </div>
+    <nav class="navbar navbar-dark bg-dark fixed-bottom" style="position: fixed; bottom:0;">
+        <div class="container-fluid d-flex justify-content-evenly">
+
+            <a href="clientes.html" class="nav-link text-muted" style="font-size:30px;">
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </a>
+
+            <a href="location.html" class="nav-link text-muted" style="font-size:30px">
+                <i class="fa fa-location-arrow" aria-hidden="true"></i>
+            </a>
+
+            <a href="favouriteLocations.html" class="nav-link text-muted" style="font-size:30px;">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+            </a>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../script/Cliente.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"></script>
+</body>
+
+</html>
