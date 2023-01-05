@@ -3,13 +3,16 @@ $(document).ready(function () {
       var nm1driver = $("#name1driver").val();
       var nic1driver = $("#nick1driver").val();
       var ps1driver = $("#pass1driver").val();
+      var phone1driver = $("#PhoneNumber1").val();
       localStorage.setItem("n1driver", nm1driver);
       localStorage.setItem("ni1driver", nic1driver);
       localStorage.setItem("p1driver", ps1driver);
+      localStorage.setItem("phone1driver", phone1driver);
       alert("We will check your informations and send you an email with our decision in the following weeks.");
       window.location.assign('../HTML/LugWheelsLogin1.html')
       return false;
     });
+
 
     $("#logindriver-form").submit(function () {
       var enteredNameDriver = $("#name2driver").val();
@@ -20,7 +23,7 @@ $(document).ready(function () {
 
       if (enteredNameDriver == storedNameDriver && enteredPassDriver == storedPassDriver) {
         alert("Successful Login!");
-        window.location.assign('../HTML/Driver.html')
+        window.location.assign('../HTML/ContaDriver.html')
         return false;
       }
       else {
@@ -28,5 +31,6 @@ $(document).ready(function () {
       }
 
     });
+
 
   });

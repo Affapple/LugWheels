@@ -11,15 +11,22 @@
     <link href="https://fonts.cdnfonts.com/css/sensation" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="../CSS/clientes.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
 </head>
 
 <body style="background-color: #2E2E2E; margin: 0;">
     <div class="row col-12 text-center mt-3" style="padding-left: 0px;margin:0px; display: flex-row; ">
         <div class="container col-2 ms-3" style="display: flex; justify-content: center;margin: 0px;">
-            <a href="Conta.html" style="color: whitesmoke; font-size: 2.5rem;">
-                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-            </a>
+                <!-- ko ifnot: photo== undefined -->
+                <a href="Conta.html" class="mt-2">
+                    <img data-bind="attr: {src: photo}" src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="User Photo" class="rounded-circle p-1 bg-light" width="50">
+                </a>
+                <!-- /ko -->
+                <!-- ko if: photo== undefined -->
+                <a href="Conta.html">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="User Photo" class="rounded-circle p-1 bg-light" width="50">
+                </a>
+                <!-- /ko -->
         </div>
         <div class="col-4 mt-4 text-center "
             style="margin-top: 0.2rem; display: inline-block;position: absolute;left:30%;">

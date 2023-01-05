@@ -4,6 +4,9 @@ let vm = function viewModel() {
         'Pestana', 'HotelAS', 'Tivoli', 'Marriot']
 
         
+        self.phone = ko.observable()
+        self.photo = localStorage.getItem("pic1")
+        self.photo = localStorage.getItem("pic1")
 
     self.listaFavoritos = {
         'Hotel': [],
@@ -12,8 +15,8 @@ let vm = function viewModel() {
 
     self.loadFavourites = function () {
         if (localStorage.getItem('favoritos') != null) {
-            self.hoteisFavoritos = JSON.parse(localStorage.favoritos).Hotel
-            self.AeroportosFavoritos = JSON.parse(localStorage.favoritos).Aeroporto
+            self.hoteisFavoritos = JSON.parse(localStorage.favoritos).Hotel;
+            self.AeroportosFavoritos = JSON.parse(localStorage.favoritos).Aeroporto;
         } else {
             localStorage.setItem('favoritos', JSON.stringify(self.listaFavoritos));
 
@@ -111,5 +114,5 @@ let vm = function viewModel() {
 };
 
 $(document).ready(function () {
-    ko.applyBindings(new vm);
+    ko.applyBindings(new vm)
 })

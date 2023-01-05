@@ -1,39 +1,6 @@
 //current script that is cleared upon changing window
 
-function publishToTable() {
-    const name = document.getElementById('fullName1').value;
-    const bags = document.getElementById('nBags1').value;
-    const pdate = document.getElementById('pickDate1').value;
-    const pplace = document.getElementById('pickPlace1').value;
-    const ddate = document.getElementById('dropDate1').value;
-    const dplace = document.getElementById('dropPlace1').value;
-    var rowCount = document.getElementById('table').rows.length;
-    if (bags && pdate && pplace && ddate && dplace && rowCount == 1) {
-        const tableElement = document.getElementById('table');
-        const trElement = document.createElement('tr');
-        const tbodyElement = document.createElement('tbody');
-        const nameEle = document.createElement('td');
-        const bagsEle = document.createElement('td');
-        const pdateEle = document.createElement('td');
-        const pplaceEle = document.createElement('td');
-        const ddateEle = document.createElement('td');
-        const dplaceEle = document.createElement('td');
-        nameEle.innerHTML = name;
-        bagsEle.innerHTML = bags;
-        pdateEle.innerHTML = pdate;
-        pplaceEle.innerHTML = pplace;
-        ddateEle.innerHTML = ddate;
-        dplaceEle.innerHTML = dplace;
-        trElement.appendChild(nameEle);
-        trElement.appendChild(bagsEle);
-        trElement.appendChild(pdateEle);
-        trElement.appendChild(pplaceEle);
-        trElement.appendChild(ddateEle);
-        trElement.appendChild(dplaceEle);
-        tbodyElement.appendChild(trElement);
-        tableElement.appendChild(tbodyElement);
-    }
-}
+
 
 function clearTable() {
     document.getElementsByTagName("tr")[1].remove();
@@ -42,6 +9,28 @@ function clearTable() {
 //new script using local storage and knockout to keep it always updated (even upon closing the window)
 var vm = function () {
     var self = this
+
+    self.fullname = ko.observableArray()
+    self.bags = ko.observableArray()
+    self.pdate = ko.observableArray()
+    self.pplace = ko.observableArray()
+    self.ddate = ko.observableArray()
+    self.dplace = ko.observableArray()
+    self.photo = ko.observableArray()  
+    self.fullname = localStorage.getItem("n2")
+    self.bags = localStorage.getItem("b1")
+    self.pdate = localStorage.getItem("pd1")
+    self.pplace = localStorage.getItem("pl1")
+    self.ddate = localStorage.getItem("dd1")
+    self.dplace = localStorage.getItem("dp1")
+    self.photo = localStorage.getItem("pic1")
+    console.log(self.fullname);
+    console.log(self.bags);
+    console.log(self.pdate);
+    console.log(self.pplace);
+    console.log(self.ddate);
+    console.log(self.dplace);
+    console.log(self.photo);  
 
     self.serviceData = {
         namearray: [],
@@ -58,15 +47,10 @@ var vm = function () {
         var aeroporto = url.searchParams.get("aeroporto")
         startService(hotel, aeroporto);
     }
-
-    self.Datanamearray = ko.observableArray()
-    self.Databagsarray = ko.observableArray()
-    self.Datapdatearray = ko.observableArray()
-    self.Datapplacearray = ko.observableArray()
-    self.Dataddatearray = ko.observableArray()
-    self.Datadplacearray = ko.observableArray()
+  
 
 };
+
 
 function startService(hotel, aeroporto){
     if (hotel != undefined){
@@ -78,7 +62,52 @@ function startService(hotel, aeroporto){
     $("#ModalForm").modal('toggle');
 }
 
-$().ready(function () {
+
+
+$(document).ready(function () {
     console.log("Ready!");
+
+        $("#send").click(function () {
+
+            var name40 = $('#fullName1').val();
+            var bags40 = $('#nBags1').val();
+            var pdate40 = $('#pickDate1').val();
+            var pplace40 =$('#pickPlace1').val();
+            var ddate40 = $('#dropDate1').val();
+            var dplace40 = $('#dropPlace1').val();
+                if (name40 != "") {
+                localStorage.setItem("n2", name40);};
+                if (bags40 != "") {
+                localStorage.setItem("b1", bags40);};
+                if (pdate40 != "") {
+                localStorage.setItem("pd1", pdate40);};
+                if (pplace40 != "") {
+                localStorage.setItem("pl1", pplace40);};
+                if (ddate40 != "") {
+                localStorage.setItem("dd1", ddate40);};
+                if (dplace40 != "") {
+                localStorage.setItem("dp1", dplace40);};
+
+            // Atualizar a Pagina
+            window.location.href = window.location.href
+            
+        });
+
+
+        
+
+
     ko.applyBindings(new vm())
 })
+
+$("#clear").click( function clearServicesStorage() {
+    localStorage.removeItem('n2');
+    localStorage.removeItem('b1');
+    localStorage.removeItem('pd1');
+    localStorage.removeItem('pl1');
+    localStorage.removeItem('dd1');
+    localStorage.removeItem('dp1');
+
+     // Atualizar a Pagina
+     window.location.href = window.location.href
+  })

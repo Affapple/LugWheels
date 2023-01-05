@@ -34,6 +34,12 @@ $(document).ready(function () {
       var ps40 = $("#pass").val();
       var sta40 = $("#state").val();
       var ctr40 = $("#country").val();
+      var pho40 = $("#phone").val();
+      var twi40 = $("#twitter").val();
+      var ins40 = $("#instagram").val();
+      var fac40 = $("#facebook").val();
+      var pic40 = $("#pic").val();
+      var city40 = $("#city").val();
       if (nm40 != "") {
       localStorage.setItem("n1", nm40);};
       if (nic40 != "") {
@@ -44,7 +50,20 @@ $(document).ready(function () {
         localStorage.setItem("sta1", sta40);};
       if (ctr40 != "") {
         localStorage.setItem("ctr1", ctr40);};
-    });
+      if (pho40 != "") {
+        localStorage.setItem("pho1", pho40);};
+      if (twi40 != "") {
+        localStorage.setItem("twi1", twi40);};
+      if (ins40 != "") {
+        localStorage.setItem("ins1", ins40);};
+      if (fac40 != "") {
+        localStorage.setItem("fac1", fac40);};
+      if (pic40 != "") {
+        localStorage.setItem("pic1", pic40);};
+      if (city40 != "") {
+        localStorage.setItem("city1", city40);};
+      });
+
 
 
 
@@ -54,16 +73,33 @@ $(document).ready(function () {
       self.mail = ko.observable()
       self.state = ko.observable()
       self.country = ko.observable()
+      self.city = ko.observable()
+      self.phone = ko.observable()
+      self.photo = ko.observable()
+      self.city = ko.observable()
       self.nome = localStorage.getItem("ni1")
       self.mail = localStorage.getItem("n1")
       self.state = localStorage.getItem("sta1")
       self.country = localStorage.getItem("ctr1")
+      self.phone = localStorage.getItem("pho1")
+      self.twitter = localStorage.getItem("twi1")
+      self.instagram = localStorage.getItem("ins1")
+      self.facebook = localStorage.getItem("fac1")
+      self.photo = localStorage.getItem("pic1")
+      self.city = localStorage.getItem("city1")
       console.log(self.nome);
       console.log(self.mail);
       console.log(self.state);
       console.log(self.country);
+      console.log(self.phone);
+      console.log(self.twitter);
+      console.log(self.instagram);
+      console.log(self.facebook);
+      console.log(self.photo);
+      console.log(self.city);
     }
-    ko.applyBindings(WritingHTML())
-  });
 
-  
+    ko.applyBindings(WritingHTML());
+    
+});
+
