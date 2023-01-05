@@ -17,10 +17,10 @@
     <div class="row col-12 text-center mt-3" style="padding-left: 0px;margin:0px; display: flex-row; ">
         <div class="container col-2 ms-3" style="display: flex; justify-content: center;margin: 0px;">
             <a href="Conta.html" style="color: whitesmoke; font-size: 2.5rem;">
-                <!-- ko ifnot: photo=="undefined" -->
+                <!-- ko ifnot: photo==undefined||photo==null||photo=="" -->
                 <img data-bind="attr: {src: photo}" src="https://bootdey.com/img/Content/avatar/avatar6.png"  class="rounded-circle p-1 bg-light" width="50">
                 <!-- /ko -->
-                <!-- ko if: photo=="undefined" -->
+                <!-- ko if: photo==undefined||photo==null||photo=="" -->
                 <img src="https://bootdey.com/img/Content/avatar/avatar6.png"  class="rounded-circle p-1 bg-light" width="50">
                 <!-- /ko -->
             </a>

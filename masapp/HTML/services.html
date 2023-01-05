@@ -17,10 +17,10 @@
     <div class="row col-12 text-center mt-3" style="padding-left: 0px;margin:0px; display: flex-row; ">
         <div class="container col-2 ms-3" style="display: flex; justify-content: center;margin: 0px;">
             <a href="Conta.html" style="color: whitesmoke; font-size: 2.5rem;">
-                <!-- ko ifnot: photo=="undefined" -->
+                <!-- ko ifnot: photo==undefined||photo==null||photo=="" -->
                 <img data-bind="attr: {src: photo}" src="https://bootdey.com/img/Content/avatar/avatar6.png"  class="rounded-circle p-1 bg-light" width="50">
                 <!-- /ko -->
-                <!-- ko if: photo=="undefined" -->
+                <!-- ko if: photo==undefined||photo==null||photo=="" -->
                 <img src="https://bootdey.com/img/Content/avatar/avatar6.png"  class="rounded-circle p-1 bg-light" width="50">
                 <!-- /ko -->
             </a>
@@ -143,6 +143,6 @@
     crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js" integrity="sha512-2AL/VEauKkZqQU9BHgnv48OhXcJPx9vdzxN1JrKDVc4FPU/MEE/BZ6d9l0mP7VmvLsjtYwqiYQpDskK9dG8KBA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <script src="/masapp/script/services.js"></script>
+    <script src="../script/services.js"></script>
 </body>
 </html>
