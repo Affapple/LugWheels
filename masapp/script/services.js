@@ -88,8 +88,42 @@ $(document).ready(function () {
                 if (dplace40 != "") {
                 localStorage.setItem("dp1", dplace40);};
 
+            var servicos = JSON.parse(localStorage.serviceArray)
+            if (servicos == null || servicos == undefined){
+                servicos = []
+            }
+            var name = localStorage.ni1
+            var Aeroporto = $('#pickPlace1').text();
+            var Hotel = $('#dropPlace1').text();
+             
+            var pickDate = pdate40.substring(0, pdate40.indexOf('T'));
+            var pickHour = pdate40.substring(pdate40.indexOf('T')+1, pdate40.length);
+            var dropDate = ddate40.substring(0, ddate40.indexOf('T'));
+            var dropHour = ddate40.substring(ddate40.indexOf('T')+1, ddate40.length);
+            var orderID = function(){
+                let max=-1
+                servicos.forEach(order => {
+                    if (order.id > max){
+                        max = order.id
+                    }
+                });
+                
+                return max == -1 ? 0 : ++max
+            }
+            servicos.push({
+                'id' : orderID(),
+                'user' : name,
+                'numBags' : bags40,
+                'pickLocation' : Aeroporto,
+                'pickDate' : pickDate,
+                'pickHour' : pickHour,
+                'dropLocation' : Hotel, 
+                'dropDate' : dropDate,
+                'dropHour' : dropHour,
+            })
+            localStorage.setItem(serviceArray, JSON.stringify(servicos))
             // Atualizar a Pagina
-            window.location.href = window.location.href
+            window.location.href = '//' + location.host + location.pathname
             
         });
 
