@@ -6,6 +6,8 @@ var map_init = L.map("map", {
   zoom: 8,
 });
 
+
+
 // Add a tile layer from OpenStreetMap
 var osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution:
@@ -25,6 +27,7 @@ if (!navigator.geolocation) {
   setInterval(() => {
     navigator.geolocation.getCurrentPosition(getPosition);
   }, 5000);
+
 }
 
 var marker, lat, long;
@@ -40,13 +43,17 @@ function getPosition(position) {
     map_init.removeLayer(marker);
   }
 
+
   // Create a marker at the user's position
   marker = L.marker([lat, long]).bindPopup(
-    "This is your location, start running"
+    "This is your location"
   );
 
   // Add the marker to the map
   var featureGroup = L.featureGroup([marker]).addTo(map_init);
+
+  // Center based on location
+  map_init.setView([lat, long]);
 
   // If it is the first time the user's position is plotted on the map, zoom to fit the marker
   if (x) {
@@ -56,6 +63,7 @@ function getPosition(position) {
   x = false;
 
   console.log("Your coordinate is: Lat: " + lat + " Long: " + long);
+
 
   // Set the destination coordinates
   var destinationLat = 38.76647708368326;
@@ -69,4 +77,7 @@ function getPosition(position) {
     ],
     routeWhileDragging: false,
   }).addTo(map_init);
+
+
 }
+

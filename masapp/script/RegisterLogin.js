@@ -18,7 +18,7 @@ $(document).ready(function () {
       var storedPass = localStorage.getItem("p1");
 
       if (enteredName == storedName && enteredPass == storedPass) {
-        alert("Successful Login!");
+        // alert("Successful Login!");
         window.location.assign('../HTML/clientes.html')
         return false;
       }

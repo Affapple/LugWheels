@@ -18,54 +18,13 @@ let vm = function driverViewModel() {
 
     
 
-    self.serviceArray = ko.observableArray([
-        {
-            'id' : '0',
-            'user':'José Pedro',
-            'location' : 'Aeroporto Sá Carneiro',
-            'date' : '2024-08-11',
-            'hour' : '11:29'
-        },
-        {
-            'id' : '1',
-            'user':' Henrique Teixeira',
-            'location' : 'Aeroporto Sá Carneiro',
-            'date' : '2024-08-11',
-            'hour' : '15:47'
-
-        },
-        {
-            'id' : '2',
-            'user':'Luís Costa',
-            'location' : 'Aeroporto Sá Carneiro',
-            'date' : '2024-08-11',
-            'hour' : '23:15'
-
-        },
-    ])
-    self.newServices = ko.observableArray([
-        {
-            'id' : '3',
-            'user':'Ricardo Reis',
-            'location' : 'Aeroporto Sá Carneiro',
-            'date' : '2024-08-12',
-            'hour' : '8:14' 
-        },
-        {
-            'id':'4',
-            'user':' Álvaro de Campos',
-            'location' : 'Aeroporto Sá Carneiro',
-            'date' : '2024-08-11',
-            'hour' : '9:57'
-        },
-        {
-            'id' : '5',
-            'user': 'Alberto Caeiro',
-            'location' : 'Aeroporto Sá Ca',
-            'date' : '2024-08-11',
-            'hour' : '12:09'
-        }
-    ])
+    self.serviceArray = ko.observableArray([])
+    self.newServices = ko.computed(function(){
+        if (localStorage.serviceRequest != undefined){
+        return JSON.parse(localStorage.serviceRequest)
+    } 
+    return []
+    })
 
     self.monthly = ko.observable(0);
     self.monthlyGains = ko.computed(function () {
@@ -76,9 +35,6 @@ let vm = function driverViewModel() {
    
     self.init = function (){
         console.log(localStorage.newServices)
-        if (localStorage.newServices != null){
-            self.newServices(JSON.parse(localStorage.newServices))
-        }
         if(localStorage.serviceArray != null){
             self.serviceArray(JSON.parse(localStorage.serviceArray))
         }
@@ -91,10 +47,12 @@ $(document).ready(function () {
     ko.applyBindings(vm)
 
     $("button").click(function(){
+        if($(this).attr('type') != "check"){
+            return
+        }
 
         parent = $(this).parent().parent();
-        
-        parentID = parent.attr('id');
+         parentID = parent.attr('id');
         for(let i = 0; i<self.newServices().length; i++){
             if(self.newServices()[i]['id'] == self.parentID){
                 var index = i;
@@ -104,15 +62,16 @@ $(document).ready(function () {
 
         if ($(this).hasClass('btn-outline-success')){
             let xx = self.newServices()[index]
+            xx['status'] = "Accepted"
             self.serviceArray().push(xx)
-            $("#currentServices").append('<tr type="activeService">'+'<td style="word-wrap: break-word">'+xx.user + '</td>' +'<td style="word-wrap: break-word">' +xx.location + '</td>'+'<td class="col-5">'+'<span>'+xx.date+'</span><br>'+'<span>'+xx.hour+'</span>'+ '</td>'+'</tr>')
+            $("#currentServices").append('<tr type="activeService">'+'<td style="word-wrap: break-word">'+xx.user + '</td>' +'<td style="word-wrap: break-word">' +xx.dropLocation + '</td>'+'<td class="col-5">'+'<span>'+xx.dropDate+'</span><br>'+'<span>'+xx.dropHour+'</span>'+ '</td>'+'</tr>')
         }
         parent.remove()
         self.newServices().splice(index, 1);
         console.log(self.newServices())
         console.log(self.serviceArray())
 
-        localStorage.newServices = JSON.stringify(self.newServices())
+        localStorage.serviceRequest = JSON.stringify(self.newServices())
         localStorage.serviceArray = JSON.stringify(self.serviceArray())
 
     })

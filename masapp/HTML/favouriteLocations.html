@@ -52,6 +52,34 @@
             </ui>
         </div>
     </div>
+    <table class="table table-striped table-hover table-dark" id="table">
+        <thead>            
+            <th>
+                <i class="fa-solid fa-hotel"></i> Favourite Hotels
+            </th>
+            <th>  
+                <i class="fa-solid fa-plane-departure"></i> Favourite Aiports 
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    <!-- ko foreach: hotel -->
+                    <li class="text-secondary ms-3 mt-3" data-bind="text: $data" style="text-decoration: none; text-align: start;list-style-type: none;"></li>
+                    <!-- /ko -->       
+                </th >
+                <th>
+                    <!-- ko foreach: aeroporto -->
+                    <li class="text-secondary ms-3 mt-3" data-bind="text: $data" style="text-decoration: none; text-align: start;list-style-type: none;"></li>
+                    <!-- /ko -->
+                </th >
+            </tr>     
+        <hr class="mt-4 mb-0">
+    </table>
+
+
+
+
     <nav class="navbar navbar-dark bg-dark fixed-bottom" style="position: fixed; bottom:0;">
         <div class="container-fluid d-flex justify-content-evenly">
 

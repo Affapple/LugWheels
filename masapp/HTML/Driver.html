@@ -45,10 +45,8 @@
                 </button>
                 <div class="collapse" id="account-collapse" style="position: absolute; z-index: 10">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><a href="LugWheelsLogin1.html"
-                                class="link-dark d-inline-flex text-decoration-none rounded">Sign
-                                out</a>
-                        </li>
+                        <li><a href="Login1.html" class="link-dark d-inline-flex text-decoration-none rounded">Sign
+                            out</a></li>
                     </ul>
                 </div>
             </ui>
@@ -76,11 +74,11 @@
                             <tbody>
                                 <!-- ko foreach: serviceArray() -->
                                 <tr type="activeService" data-bind="attr: {'id': id}">
-                                    <td style="word-wrap: break-word" data-bind="text:user"></td>
-                                    <td style="word-wrap: break-word" data-bind="text:location"></td>
+                                    <td style="word-wrap: break-word" data-bind="text:$data.user"></td>
+                                    <td style="word-wrap: break-word" data-bind="text:pickLocation"></td>
                                     <td class="col-5">
-                                        <span data-bind="text:date"></span> <br>
-                                        <span data-bind="text:hour"></span>
+                                        <span data-bind="text:pickDate"></span> <br>
+                                        <span data-bind="text:pickHour"></span>
                                     </td>
                                 </tr>
                                 <!-- /ko -->
@@ -111,17 +109,17 @@
                             <tbody>
                                 <!-- ko foreach: newServices() -->
                                 <tr data-bind="attr:{'id':id}">
-                                    <td data-bind="text:location"></td>
+                                    <td data-bind="text:pickLocation"></td>
                                     <td class="col-5">
-                                        <span data-bind="text:date"></span> <br>
-                                        <span data-bind="text:hour"></span>
+                                        <span data-bind="text:pickDate"></span> <br>
+                                        <span data-bind="text:pickHour"></span>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-outline-success" aria-hidden="true">
+                                        <button class="btn btn-sm btn-outline-success" aria-hidden="true" type="check">
                                             <i class="fa fa-check">
                                             </i>
                                         </button>
-                                        <button class="btn btn-sm btn-outline-danger">
+                                        <button class="btn btn-sm btn-outline-danger" aria-hidden="true" type="check">
                                             <i class="fa fa-times" aria-hidden="true" style="width:15px"></i>
                                         </button>
                                     </td>
@@ -148,17 +146,24 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title text-center" data-bind="text:user"></h5>
+                    <h5 class="modal-title text-center" data-bind="text:$data.user"></h5>
                 </div>
                 <div class="modal-body">
-                    <p><b><span data-bind="text:user"></span></b>&#9;will arrive</p>
-                    <p>At 
-                        <b><span data-bind="text:hour"></span></b> &#9;  
-
-                        On &#9;<b><span data-bind="text:date"></span></b>
+                    <p>
+                        <b><span data-bind="text:$data.user"></span></b>
+                        &#9;will arrive at &#9; 
+                        <b><span data-bind="text:pickHour"></span></b>&#9;  
+                        &#9;
+                        ( <b><span data-bind="text:pickDate"></span></b> )
                     </p>
                     <p>
-                        He should be at &#9;<b><span data-bind="text:location"></span></b>
+                        He should be at &#9;<b><span data-bind="text:pickLocation"></span></b>
+                    </p>
+                    <p>
+                        Your client has <b><span data-bind="text:numBags"></span></b> bags that should be dropped at &#9;
+                        <b><span data-bind="text:dropLocation"></span></b>
+                        on <b><span data-bind="text:dropHour"></span></b>
+                        &#9; ( <b><span data-bind="text:dropDate"></span></b> )
                     </p>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">

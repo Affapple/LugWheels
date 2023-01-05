@@ -19,7 +19,7 @@ let vm = function viewModel() {
             self.AeroportosFavoritos = JSON.parse(localStorage.favoritos).Aeroporto;
         } else {
             localStorage.setItem('favoritos', JSON.stringify(self.listaFavoritos));
-
+            return
         };
 
         self.hoteisFavoritos.forEach(id => { $("#favourite_" + id).css('color', 'red'); });
