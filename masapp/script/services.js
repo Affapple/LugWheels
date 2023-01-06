@@ -77,17 +77,15 @@ $(document).ready(function () {
 
 
     $("#send").click(function () {
-        var name40 = $('#fullName1').val();
         var bags40 = $('#nBags1').val();
         var pdate40 = $('#pickDate1').val();
         var pplace40 = $('#pickPlace1 option:selected').val();
         var ddate40 = $('#dropDate1').val();
         var dplace40 = $('#dropPlace1  option:selected').val();
-        if (name40 == "" || bags40 == "" || pplace40 == "Select Airport" || dplace40 == "Select Hotel") {
+        if ( bags40 == "" || pplace40 == "Select Airport" || dplace40 == "Select Hotel") {
             return
         }
         
-        localStorage.setItem("n2", name40);
         localStorage.setItem("b1", bags40);
         localStorage.setItem("pd1", pdate40);
         localStorage.setItem("pl1", pplace40);
@@ -99,8 +97,8 @@ $(document).ready(function () {
         if (servicos == null) {
             servicos = []
         }
-        var name = localStorage.n2
-        if (name == "" ||  name == undefined){
+        var name = localStorage.getItem('n2')
+        if (name == null){
             name = "Client's Names"
         }
         var Aeroporto = $('#pickPlace1 option:selected').text();

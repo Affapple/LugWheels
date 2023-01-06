@@ -52,7 +52,7 @@ $(document).ready(function () {
         }
 
         parent = $(this).parent().parent();
-         parentID = parent.attr('id');
+        parentID = parent.attr('id');
         for(let i = 0; i<self.newServices().length; i++){
             if(self.newServices()[i]['id'] == self.parentID){
                 var index = i;
@@ -60,7 +60,7 @@ $(document).ready(function () {
             }
         }
 
-        if ($(this).hasClass('btn-outline-success')){
+        if ($(this).hasClass('btn-outline-success') || $(this).parent().hasClass('btn-outline-success')){
             let xx = self.newServices()[index]
             xx['status'] = "Accepted"
             self.serviceArray().push(xx)

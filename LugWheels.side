@@ -1,0 +1,1576 @@
+{
+  "id": "a4ad9d21-3963-4e08-beee-538304d6934b",
+  "version": "2.0",
+  "name": "LugWheels",
+  "url": "https://affapple.github.io/LugWheels/masapp/HTML/Driver.html",
+  "tests": [{
+    "id": "381d0134-2648-4721-813d-1636f6858302",
+    "name": "Register",
+    "commands": [{
+      "id": "aa5f68c2-cff7-43a0-a2c4-509440e38c3e",
+      "comment": "",
+      "command": "open",
+      "target": "/LugWheels/masapp/HTML/AppIndex.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74d8dd3f-d3f7-49b5-9402-5d3c2a8f2073",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "785x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c3ca4e0-37c2-41c5-8807-e1dcfb9a8322",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-warning",
+      "targets": [
+        ["css=.btn-warning", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='trans']/div/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Client')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3915fd4a-41ca-441c-86d4-4c604b21ba9d",
+      "comment": "",
+      "command": "click",
+      "target": "id=name1",
+      "targets": [
+        ["id=name1", "id"],
+        ["css=#name1", "css:finder"],
+        ["xpath=//input[@id='name1']", "xpath:attributes"],
+        ["xpath=//form[@id='signup-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b03e9388-1fd1-4d57-8be6-41d9a2bbc58e",
+      "comment": "",
+      "command": "type",
+      "target": "id=name1",
+      "targets": [
+        ["id=name1", "id"],
+        ["css=#name1", "css:finder"],
+        ["xpath=//input[@id='name1']", "xpath:attributes"],
+        ["xpath=//form[@id='signup-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "wrongmail.com"
+    }, {
+      "id": "5f925c46-0755-4745-a4d2-1e81900fc243",
+      "comment": "",
+      "command": "type",
+      "target": "id=nick1",
+      "targets": [
+        ["id=nick1", "id"],
+        ["css=#nick1", "css:finder"],
+        ["xpath=//input[@id='nick1']", "xpath:attributes"],
+        ["xpath=//form[@id='signup-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "username"
+    }, {
+      "id": "6bcd2c25-d1ab-40da-bf2f-8cdfc52ec1e4",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass1",
+      "targets": [
+        ["id=pass1", "id"],
+        ["css=#pass1", "css:finder"],
+        ["xpath=//input[@id='pass1']", "xpath:attributes"],
+        ["xpath=//form[@id='signup-form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "07814a1a-0e0b-4bf2-8d05-235d2be44553",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9f4f398-d4eb-4372-81c7-2be7da252b8a",
+      "comment": "",
+      "command": "click",
+      "target": "id=name1",
+      "targets": [
+        ["id=name1", "id"],
+        ["css=#name1", "css:finder"],
+        ["xpath=//input[@id='name1']", "xpath:attributes"],
+        ["xpath=//form[@id='signup-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccc78672-6d4a-49e7-b38f-7bd5d67a7da1",
+      "comment": "",
+      "command": "type",
+      "target": "id=name1",
+      "targets": [
+        ["id=name1", "id"],
+        ["css=#name1", "css:finder"],
+        ["xpath=//input[@id='name1']", "xpath:attributes"],
+        ["xpath=//form[@id='signup-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "example@mail.com"
+    }, {
+      "id": "5a23a6ef-a544-4aa6-83bc-750e3c0551a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-100:nth-child(4)",
+      "targets": [
+        ["css=.w-100:nth-child(4)", "css:finder"],
+        ["xpath=//input[@value='Sign Up']", "xpath:attributes"],
+        ["xpath=//form[@id='signup-form']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d89b0ca-9f5b-4409-bfff-0d11739e720f",
+      "comment": "",
+      "command": "click",
+      "target": "id=name2",
+      "targets": [
+        ["id=name2", "id"],
+        ["css=#name2", "css:finder"],
+        ["xpath=//input[@id='name2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28bc6f68-d156-4260-961b-c59c37ee9773",
+      "comment": "",
+      "command": "type",
+      "target": "id=name2",
+      "targets": [
+        ["id=name2", "id"],
+        ["css=#name2", "css:finder"],
+        ["xpath=//input[@id='name2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div/input", "xpath:position"]
+      ],
+      "value": "example@mail.com"
+    }, {
+      "id": "c5e15f8f-9024-4a17-a2de-652a047530e7",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass2",
+      "targets": [
+        ["id=pass2", "id"],
+        ["css=#pass2", "css:finder"],
+        ["xpath=//input[@id='pass2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div[2]/input", "xpath:position"]
+      ],
+      "value": "wrongpassword"
+    }, {
+      "id": "7f8d7b61-3084-4c01-a0b4-6c1c7f49fe3c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=pass2",
+      "targets": [
+        ["id=pass2", "id"],
+        ["css=#pass2", "css:finder"],
+        ["xpath=//input[@id='pass2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "ed16ce8d-15a3-431a-a9bf-fb99a74258ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=name2",
+      "targets": [
+        ["id=name2", "id"],
+        ["css=#name2", "css:finder"],
+        ["xpath=//input[@id='name2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9866178f-895b-4432-a307-585df6ea590a",
+      "comment": "",
+      "command": "type",
+      "target": "id=name2",
+      "targets": [
+        ["id=name2", "id"],
+        ["css=#name2", "css:finder"],
+        ["xpath=//input[@id='name2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div/input", "xpath:position"]
+      ],
+      "value": "example@mail.com"
+    }, {
+      "id": "8a5bf3c0-b02e-4dc7-b3b2-d7014be82622",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass2",
+      "targets": [
+        ["id=pass2", "id"],
+        ["css=#pass2", "css:finder"],
+        ["xpath=//input[@id='pass2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div[2]/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "3bc0c325-7433-4fca-b838-1f5e3872892a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=pass2",
+      "targets": [],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "74376c3f-de0b-4b71-9a1a-99a33f0e38fd",
+    "name": "favorites",
+    "commands": [{
+      "id": "21c48deb-b8c7-4703-9509-47e14127d484",
+      "comment": "",
+      "command": "open",
+      "target": "https://affapple.github.io/LugWheels/masapp/HTML/clientes.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd0203d6-138e-42b0-8106-0a85e4c0a793",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "786x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "accc8ddf-074a-4b5a-bab0-563069f7f468",
+      "comment": "",
+      "command": "click",
+      "target": "id=favourite_SeaPorto",
+      "targets": [
+        ["id=favourite_SeaPorto", "id"],
+        ["css=#favourite_SeaPorto", "css:finder"],
+        ["xpath=//i[@id='favourite_SeaPorto']", "xpath:attributes"],
+        ["xpath=//div[@id='SeaPorto']/div/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58b701af-de77-4dd4-835c-ca35848ab82a",
+      "comment": "",
+      "command": "click",
+      "target": "id=favourite_Novotel",
+      "targets": [
+        ["id=favourite_Novotel", "id"],
+        ["css=#favourite_Novotel", "css:finder"],
+        ["xpath=//i[@id='favourite_Novotel']", "xpath:attributes"],
+        ["xpath=//div[@id='Novotel']/div/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abd466af-60cb-47cf-bb68-846279ff071a",
+      "comment": "",
+      "command": "click",
+      "target": "id=favourite_Radisson",
+      "targets": [
+        ["id=favourite_Radisson", "id"],
+        ["css=#favourite_Radisson", "css:finder"],
+        ["xpath=//i[@id='favourite_Radisson']", "xpath:attributes"],
+        ["xpath=//div[@id='Radisson']/div/i", "xpath:idRelative"],
+        ["xpath=//div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e72e4fe6-8ffb-448e-8af9-ad2e7ff25f69",
+      "comment": "",
+      "command": "click",
+      "target": "id=favourite_Sá_Carneiro",
+      "targets": [
+        ["id=favourite_Sá_Carneiro", "id"],
+        ["css=#favourite_S\\E1_Carneiro", "css:finder"],
+        ["xpath=//i[@id='favourite_Sá_Carneiro']", "xpath:attributes"],
+        ["xpath=//a[@id='Sá_Carneiro']/i", "xpath:idRelative"],
+        ["xpath=//a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d77990a-03c2-4464-8c98-3f29e05209b9",
+      "comment": "",
+      "command": "click",
+      "target": "id=favourite_Novotel",
+      "targets": [
+        ["id=favourite_Novotel", "id"],
+        ["css=#favourite_Novotel", "css:finder"],
+        ["xpath=//i[@id='favourite_Novotel']", "xpath:attributes"],
+        ["xpath=//div[@id='Novotel']/div/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eec495c3-d429-4bb3-a6b6-74db27ea8aed",
+      "comment": "",
+      "command": "click",
+      "target": "id=favourite_SeaPorto",
+      "targets": [
+        ["id=favourite_SeaPorto", "id"],
+        ["css=#favourite_SeaPorto", "css:finder"],
+        ["xpath=//i[@id='favourite_SeaPorto']", "xpath:attributes"],
+        ["xpath=//div[@id='SeaPorto']/div/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d11a41d-5188-4c91-8bd6-c94cb92494ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-link > .fa-heart",
+      "targets": [
+        ["css=.nav-link > .fa-heart", "css:finder"],
+        ["xpath=//a[3]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a13b918d-c90e-4ee9-8c15-c93c8eba22fa",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=th:nth-child(1) > .text-secondary",
+      "targets": [
+        ["css=th:nth-child(1) > .text-secondary", "css:finder"],
+        ["xpath=//table[@id='table']/tbody/tr/th/li", "xpath:idRelative"],
+        ["xpath=//th/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Radisson')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "114d80bb-7379-4d5f-913d-b58029196f0b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=th:nth-child(2) > .text-secondary",
+      "targets": [
+        ["css=th:nth-child(2) > .text-secondary", "css:finder"],
+        ["xpath=//table[@id='table']/tbody/tr/th[2]/li", "xpath:idRelative"],
+        ["xpath=//th[2]/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Sá_Carneiro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ed0cef82-6bb6-4f91-92f0-cd41093d0bfb",
+    "name": "Make new service order",
+    "commands": [{
+      "id": "046bdee3-13f8-456a-97dc-791a3e483d61",
+      "comment": "",
+      "command": "open",
+      "target": "https://affapple.github.io/LugWheels/masapp/HTML/clientes.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d40f7b59-c398-40e0-b8af-3331488b887f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "787x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d07fe75e-c2d1-4d7c-8db0-65bdb8f5cc90",
+      "comment": "",
+      "command": "click",
+      "target": "css=#S\\E1_Carneiro > .mb-1",
+      "targets": [
+        ["css=#S\\E1_Carneiro > .mb-1", "css:finder"],
+        ["xpath=//a[@id='Sá_Carneiro']/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41f522e4-537f-4cb4-b5c0-a4e20d88821c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#SeaPorto .portugal",
+      "targets": [
+        ["css=#SeaPorto .portugal", "css:finder"],
+        ["xpath=//div[@id='SeaPorto']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Sea Porto Hotel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccf18ef0-0c38-401f-9a9f-d17b0d2d3184",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Novotel > .imgHotel",
+      "targets": [
+        ["css=#Novotel > .imgHotel", "css:finder"],
+        ["xpath=//img[@alt='Hotel Novotel']", "xpath:img"],
+        ["xpath=//div[@id='Novotel']/img", "xpath:idRelative"],
+        ["xpath=//div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "862c832c-4b11-4ee6-a9c9-2912660635b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Humberto_Delgado > .mb-1",
+      "targets": [
+        ["css=#Humberto_Delgado > .mb-1", "css:finder"],
+        ["xpath=//a[@id='Humberto_Delgado']/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "076ee31e-2869-40ab-ad27-1e22f171567e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Pestana > .imgHotel",
+      "targets": [
+        ["css=#Pestana > .imgHotel", "css:finder"],
+        ["xpath=//img[@alt='Hotel Pestana']", "xpath:img"],
+        ["xpath=//div[@id='Pestana']/img", "xpath:idRelative"],
+        ["xpath=//div[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc8f3471-efa9-4e44-b6cd-5e816ad95329",
+      "comment": "",
+      "command": "click",
+      "target": "id=pedido",
+      "targets": [
+        ["id=pedido", "id"],
+        ["linkText=LugWheels!", "linkText"],
+        ["css=#pedido", "css:finder"],
+        ["xpath=//a[@id='pedido']", "xpath:attributes"],
+        ["xpath=//div[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'LugWheels!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "829e4900-db72-4308-b8f9-583d175d01c6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.myinfo:nth-child(2)",
+      "targets": [
+        ["css=.myinfo:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9414763-fed4-4ff4-a4e0-093dd107430d",
+      "comment": "",
+      "command": "assertSelectedValue",
+      "target": "id=pickPlace1",
+      "targets": [
+        ["id=pickPlace1", "id"],
+        ["css=#pickPlace1", "css:finder"],
+        ["xpath=//select[@id='pickPlace1']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/div/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "Humberto Delgado"
+    }, {
+      "id": "87bfe561-6d85-4097-9384-a2dbe9524d19",
+      "comment": "",
+      "command": "assertSelectedValue",
+      "target": "id=dropPlace1",
+      "targets": [
+        ["id=dropPlace1", "id"],
+        ["css=#dropPlace1", "css:finder"],
+        ["xpath=//select[@id='dropPlace1']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/div/div[5]/select", "xpath:idRelative"],
+        ["xpath=//div[5]/select", "xpath:position"]
+      ],
+      "value": "Pestana"
+    }, {
+      "id": "6b3b9569-f317-41c9-8873-fe71d00d4c89",
+      "comment": "",
+      "command": "click",
+      "target": "id=send",
+      "targets": [
+        ["id=send", "id"],
+        ["css=#send", "css:finder"],
+        ["xpath=//button[@id='send']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'SEND')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c74092d4-f93b-446b-b0bd-3021680c1070",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.myinfo:nth-child(2)",
+      "targets": [
+        ["css=.myinfo:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ef3126f-347b-47f5-8f71-3d9960635586",
+      "comment": "",
+      "command": "click",
+      "target": "id=nBags1",
+      "targets": [
+        ["id=nBags1", "id"],
+        ["css=#nBags1", "css:finder"],
+        ["xpath=//input[@id='nBags1']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c883b742-a934-48fa-8671-23ccc2dc9782",
+      "comment": "",
+      "command": "type",
+      "target": "id=nBags1",
+      "targets": [
+        ["id=nBags1", "id"],
+        ["css=#nBags1", "css:finder"],
+        ["xpath=//input[@id='nBags1']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "e71fe53a-0930-4f15-90ed-43a41ed58ecc",
+      "comment": "",
+      "command": "click",
+      "target": "id=send",
+      "targets": [
+        ["id=send", "id"],
+        ["css=#send", "css:finder"],
+        ["xpath=//button[@id='send']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'SEND')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5972fb94-f8f2-4758-9017-7abd7b971e94",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tbody th:nth-child(3)",
+      "targets": [
+        ["css=tbody th:nth-child(3)", "css:finder"],
+        ["xpath=//table[@id='table']/tbody/tr/th[3]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/th[3]", "xpath:position"],
+        ["xpath=//th[contains(.,'Humberto Delgado')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "967a0c6c-2341-4f26-a7b3-3fe50a0a576a",
+    "name": "Locate",
+    "commands": [{
+      "id": "0891a882-5f82-43e5-87a0-4a2704ba2d67",
+      "comment": "",
+      "command": "open",
+      "target": "https://affapple.github.io/LugWheels/masapp/HTML/services.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d613f344-43eb-4108-bd1b-293aa198dba6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "781x831",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a949c588-dab9-4025-8439-a84309eeed6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-xs",
+      "targets": [
+        ["css=.btn-xs", "css:finder"],
+        ["xpath=//table[@id='table']/tbody/tr/th[6]/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Locate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93d69e85-543d-421f-8143-eccf1e71a58b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.leaflet-marker-icon",
+      "targets": [
+        ["css=.leaflet-marker-icon", "css:finder"],
+        ["xpath=//img[contains(@src,'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png')]", "xpath:img"],
+        ["xpath=//div[@id='map']/div/div[4]/img", "xpath:idRelative"],
+        ["xpath=//div[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e9532e64-06e4-4ba7-b58c-b13bfbbfce53",
+    "name": "MyLocation",
+    "commands": [{
+      "id": "4262e928-531f-47b2-8a70-93aedf7b5829",
+      "comment": "",
+      "command": "open",
+      "target": "https://affapple.github.io/LugWheels/masapp/HTML/clientes.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c47a914-82ae-40ae-b7cd-d87261c47220",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-location-arrow",
+      "targets": [
+        ["css=.fa-location-arrow", "css:finder"],
+        ["xpath=//a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1bc6f34-1f7d-41e6-832f-eeaa67ee5354",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.leaflet-marker-icon",
+      "targets": [
+        ["css=.leaflet-marker-icon", "css:finder"],
+        ["xpath=//img[contains(@src,'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png')]", "xpath:img"],
+        ["xpath=//div[@id='map']/div/div[4]/img", "xpath:idRelative"],
+        ["xpath=//div[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ebf67784-efb8-43a0-a6f3-f2fe5ea3cbdc",
+    "name": "newOrder",
+    "commands": [{
+      "id": "81bb7abe-82cd-4991-b2ac-1a49514e3d48",
+      "comment": "",
+      "command": "open",
+      "target": "https://affapple.github.io/LugWheels/masapp/HTML/services.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04838a06-328d-44b7-acf3-201b376d0079",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "783x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "504ab66f-cd0d-4cdc-ad50-409f207bc284",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-dark:nth-child(1)",
+      "targets": [
+        ["css=.btn-dark:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button mb-3']", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Start Lugwheels')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d4b545e-648f-4a47-83a7-b8db7d87edc9",
+      "comment": "",
+      "command": "click",
+      "target": "id=nBags1",
+      "targets": [
+        ["id=nBags1", "id"],
+        ["css=#nBags1", "css:finder"],
+        ["xpath=//input[@id='nBags1']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43d77944-3a59-4662-903a-47dc85f95962",
+      "comment": "",
+      "command": "type",
+      "target": "id=nBags1",
+      "targets": [
+        ["id=nBags1", "id"],
+        ["css=#nBags1", "css:finder"],
+        ["xpath=//input[@id='nBags1']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "0243d5cf-d4de-4290-a530-fd5fe725fe9b",
+      "comment": "",
+      "command": "click",
+      "target": "id=pickPlace1",
+      "targets": [
+        ["id=pickPlace1", "id"],
+        ["css=#pickPlace1", "css:finder"],
+        ["xpath=//select[@id='pickPlace1']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/div/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a446f6b9-ecdf-4570-8267-879ac73885c1",
+      "comment": "",
+      "command": "select",
+      "target": "id=pickPlace1",
+      "targets": [],
+      "value": "label=Airport Francisco Sá Carneiro"
+    }, {
+      "id": "02bc2445-3d5b-48d1-8f7c-d7177afd467a",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropPlace1",
+      "targets": [
+        ["id=dropPlace1", "id"],
+        ["css=#dropPlace1", "css:finder"],
+        ["xpath=//select[@id='dropPlace1']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/div/div[5]/select", "xpath:idRelative"],
+        ["xpath=//div[5]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7dddceb6-b629-4003-9e5c-a5b9ba972c05",
+      "comment": "",
+      "command": "select",
+      "target": "id=dropPlace1",
+      "targets": [],
+      "value": "label=Hotel A.S"
+    }, {
+      "id": "153e085b-e90d-455e-afd0-0599e2a4af22",
+      "comment": "",
+      "command": "click",
+      "target": "id=send",
+      "targets": [
+        ["id=send", "id"],
+        ["css=#send", "css:finder"],
+        ["xpath=//button[@id='send']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'SEND')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34f68d40-a1a7-456d-812f-e0ae84482d95",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tbody th:nth-child(5)",
+      "targets": [
+        ["css=tbody th:nth-child(5)", "css:finder"],
+        ["xpath=//table[@id='table']/tbody/tr/th[5]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/th[5]", "xpath:position"],
+        ["xpath=//th[contains(.,'HotelAS')]", "xpath:innerText"]
+      ],
+      "value": "HotelAS"
+    }, {
+      "id": "53466b71-73ea-4653-bd0f-9d3e4ec9abeb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tbody th:nth-child(3)",
+      "targets": [
+        ["css=tbody th:nth-child(3)", "css:finder"],
+        ["xpath=//table[@id='table']/tbody/tr/th[3]", "xpath:idRelative"],
+        ["xpath=//tbody/tr/th[3]", "xpath:position"],
+        ["xpath=//th[contains(.,'Sá Carneiro')]", "xpath:innerText"]
+      ],
+      "value": "Sá Carneiro"
+    }]
+  }, {
+    "id": "7a196dc2-2d61-4820-8585-7fae418e7f07",
+    "name": "changeUserData",
+    "commands": [{
+      "id": "6767152a-ea53-4c6c-ba63-92f2aa88df04",
+      "comment": "",
+      "command": "open",
+      "target": "https://affapple.github.io/LugWheels/masapp/HTML/clientes.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "495e01b6-2047-4414-82e0-02740ee41bf1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rounded-circle",
+      "targets": [
+        ["css=.rounded-circle", "css:finder"],
+        ["xpath=//img[@alt='User Photo']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "983990f8-d474-41bf-80ec-105df666a87a",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18bfa644-a2e7-4042-8dfd-de022a384989",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Jose Costa"
+    }, {
+      "id": "a39dfdfb-9c5f-4db4-9524-ac0bb6ef66b9",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e439d26e-afce-4b06-bbe2-ff3be6a0c84f",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "newpassword"
+    }, {
+      "id": "20daec17-11eb-4e1f-9864-b6fb57587cdb",
+      "comment": "",
+      "command": "click",
+      "target": "id=save",
+      "targets": [
+        ["id=save", "id"],
+        ["css=#save", "css:finder"],
+        ["xpath=//input[@id='save']", "xpath:attributes"],
+        ["xpath=//div[12]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ead0bae2-6a6b-4da6-8156-f1a397ef042a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-bars",
+      "targets": [
+        ["css=.fa-bars", "css:finder"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10ed9e6e-e978-4f04-96d9-c9445e68d227",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > .link-dark",
+      "targets": [
+        ["css=li:nth-child(2) > .link-dark", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign\n                                out')]", "xpath:link"],
+        ["xpath=//div[@id='account-collapse']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Login.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c6d6fe9-2082-40de-bc8d-1eedfc3b7838",
+      "comment": "",
+      "command": "click",
+      "target": "id=name2",
+      "targets": [
+        ["id=name2", "id"],
+        ["css=#name2", "css:finder"],
+        ["xpath=//input[@id='name2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1752896e-4254-4ae8-acd7-81724d832eb9",
+      "comment": "",
+      "command": "type",
+      "target": "id=name2",
+      "targets": [
+        ["id=name2", "id"],
+        ["css=#name2", "css:finder"],
+        ["xpath=//input[@id='name2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div/input", "xpath:position"]
+      ],
+      "value": "example@mail.com"
+    }, {
+      "id": "9cac94a0-31a1-404d-99dc-6bd1ac3ef925",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass2",
+      "targets": [
+        ["id=pass2", "id"],
+        ["css=#pass2", "css:finder"],
+        ["xpath=//input[@id='pass2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div[2]/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "89a61ba5-4329-4e91-a66e-858f50f8bf1e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=pass2",
+      "targets": [
+        ["id=pass2", "id"],
+        ["css=#pass2", "css:finder"],
+        ["xpath=//input[@id='pass2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "c882d390-45da-4b45-9a18-cea74fdb953f",
+      "comment": "",
+      "command": "click",
+      "target": "id=name2",
+      "targets": [
+        ["id=name2", "id"],
+        ["css=#name2", "css:finder"],
+        ["xpath=//input[@id='name2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3994f4b5-fbc1-4ea1-acb7-7c753f9d92a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=name2",
+      "targets": [
+        ["id=name2", "id"],
+        ["css=#name2", "css:finder"],
+        ["xpath=//input[@id='name2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div/input", "xpath:position"]
+      ],
+      "value": "example@mail.com"
+    }, {
+      "id": "6c34b335-7d2f-443b-b313-67290d44eab7",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass2",
+      "targets": [
+        ["id=pass2", "id"],
+        ["css=#pass2", "css:finder"],
+        ["xpath=//input[@id='pass2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div[2]/input", "xpath:position"]
+      ],
+      "value": "newpassword"
+    }, {
+      "id": "399e483f-8151-4c7d-a30c-8cb7e3fe950d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=pass2",
+      "targets": [
+        ["id=pass2", "id"],
+        ["css=#pass2", "css:finder"],
+        ["xpath=//input[@id='pass2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "4836ffec-3ddc-4eb1-b480-78c137743f1a",
+    "name": "DriverRegister/Login",
+    "commands": [{
+      "id": "eed966e9-0976-4fba-975a-ddda7394568c",
+      "comment": "",
+      "command": "open",
+      "target": "https://affapple.github.io/LugWheels/masapp/HTML/AppIndex.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a00ff20b-a501-40ea-b161-837cb6951777",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger > h1",
+      "targets": [
+        ["css=.btn-danger > h1", "css:finder"],
+        ["xpath=//div[@id='trans']/div[2]/a/button/h1", "xpath:idRelative"],
+        ["xpath=//div[2]/a/button/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Driver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb7c5788-9a85-4046-8c38-3f1a4160a78c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary > h1",
+      "targets": [
+        ["css=.btn-primary > h1", "css:finder"],
+        ["xpath=//div[@id='trans']/div/a/button/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab5f1f00-769b-428f-bb99-1f056702a56c",
+      "comment": "",
+      "command": "click",
+      "target": "id=name2driver",
+      "targets": [
+        ["id=name2driver", "id"],
+        ["css=#name2driver", "css:finder"],
+        ["xpath=//input[@id='name2driver']", "xpath:attributes"],
+        ["xpath=//form[@id='logindriver-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e651a6f-1da6-4e7b-8f2a-7cc7e195e513",
+      "comment": "",
+      "command": "type",
+      "target": "id=name2driver",
+      "targets": [
+        ["id=name2driver", "id"],
+        ["css=#name2driver", "css:finder"],
+        ["xpath=//input[@id='name2driver']", "xpath:attributes"],
+        ["xpath=//form[@id='logindriver-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "example@mail.com"
+    }, {
+      "id": "b9e6c1da-e1be-4354-8d18-fd144a770e3c",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass2driver",
+      "targets": [
+        ["id=pass2driver", "id"],
+        ["css=#pass2driver", "css:finder"],
+        ["xpath=//input[@id='pass2driver']", "xpath:attributes"],
+        ["xpath=//form[@id='logindriver-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "newpassword"
+    }, {
+      "id": "e69ec847-12c1-4a58-a905-8c301c742c9f",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_btndriver",
+      "targets": [
+        ["id=login_btndriver", "id"],
+        ["css=#login_btndriver", "css:finder"],
+        ["xpath=//input[@id='login_btndriver']", "xpath:attributes"],
+        ["xpath=//form[@id='logindriver-form']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "528fe38f-3e7d-428b-aea5-d1eb590ca087",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-light",
+      "targets": [
+        ["css=.btn-light", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//body[@id='front']/div/div[2]/div/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27e5ffb8-d94d-4657-b7a3-89c3d13a56b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success > h1",
+      "targets": [
+        ["css=.btn-success > h1", "css:finder"],
+        ["xpath=//div[@id='trans']/div[2]/a/button/h1", "xpath:idRelative"],
+        ["xpath=//div[2]/a/button/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Apply')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44b4acd1-5025-42fa-b711-925b9dd27b6c",
+      "comment": "",
+      "command": "click",
+      "target": "id=name1driver",
+      "targets": [
+        ["id=name1driver", "id"],
+        ["css=#name1driver", "css:finder"],
+        ["xpath=//input[@id='name1driver']", "xpath:attributes"],
+        ["xpath=//form[@id='signupdriver-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c8c6fe5-58be-4454-90e8-c03ae78d16e7",
+      "comment": "",
+      "command": "type",
+      "target": "id=name1driver",
+      "targets": [
+        ["id=name1driver", "id"],
+        ["css=#name1driver", "css:finder"],
+        ["xpath=//input[@id='name1driver']", "xpath:attributes"],
+        ["xpath=//form[@id='signupdriver-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "example@mail.com"
+    }, {
+      "id": "4fd3da68-c98e-4fc3-9724-11531a495370",
+      "comment": "",
+      "command": "type",
+      "target": "id=nick1driver",
+      "targets": [
+        ["id=nick1driver", "id"],
+        ["css=#nick1driver", "css:finder"],
+        ["xpath=//input[@id='nick1driver']", "xpath:attributes"],
+        ["xpath=//form[@id='signupdriver-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Jose Antunes"
+    }, {
+      "id": "6afcfbbe-54d6-4bbc-a9ef-52576828fc03",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass1driver",
+      "targets": [
+        ["id=pass1driver", "id"],
+        ["css=#pass1driver", "css:finder"],
+        ["xpath=//input[@id='pass1driver']", "xpath:attributes"],
+        ["xpath=//form[@id='signupdriver-form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "be804b90-1d52-4b58-ba0f-e2f9729438d1",
+      "comment": "",
+      "command": "type",
+      "target": "id=PhoneNumber1",
+      "targets": [
+        ["id=PhoneNumber1", "id"],
+        ["css=#PhoneNumber1", "css:finder"],
+        ["xpath=//input[@id='PhoneNumber1']", "xpath:attributes"],
+        ["xpath=//form[@id='signupdriver-form']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "913456789"
+    }, {
+      "id": "5f1cb30c-c3ad-43cc-8f0b-7024785c0991",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-100",
+      "targets": [
+        ["css=.w-100", "css:finder"],
+        ["xpath=//input[@value='Apply']", "xpath:attributes"],
+        ["xpath=//form[@id='signupdriver-form']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ef50f27-5b08-47fd-bd3e-53e836b001ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary > h1",
+      "targets": [
+        ["css=.btn-primary > h1", "css:finder"],
+        ["xpath=//div[@id='trans']/div/a/button/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b22ee907-df42-4e87-a57c-a8335f4393b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=name2driver",
+      "targets": [
+        ["id=name2driver", "id"],
+        ["css=#name2driver", "css:finder"],
+        ["xpath=//input[@id='name2driver']", "xpath:attributes"],
+        ["xpath=//form[@id='logindriver-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dfa3ca8-527a-446c-a1a2-c8bc75297358",
+      "comment": "",
+      "command": "type",
+      "target": "id=name2driver",
+      "targets": [
+        ["id=name2driver", "id"],
+        ["css=#name2driver", "css:finder"],
+        ["xpath=//input[@id='name2driver']", "xpath:attributes"],
+        ["xpath=//form[@id='logindriver-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "example@mail.com"
+    }, {
+      "id": "3def9fb3-c948-4426-93d7-b526591e60d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass2driver",
+      "targets": [
+        ["id=pass2driver", "id"],
+        ["css=#pass2driver", "css:finder"],
+        ["xpath=//input[@id='pass2driver']", "xpath:attributes"],
+        ["xpath=//form[@id='logindriver-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "945afe44-b3ed-4546-b262-9241eb6d3ff5",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=pass2driver",
+      "targets": [
+        ["id=pass2driver", "id"],
+        ["css=#pass2driver", "css:finder"],
+        ["xpath=//input[@id='pass2driver']", "xpath:attributes"],
+        ["xpath=//form[@id='logindriver-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "b50591d8-9bd3-4ab6-92ea-d54cf4bd9746",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h4",
+      "targets": [
+        ["css=h4", "css:finder"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Jose Antunes')]", "xpath:innerText"]
+      ],
+      "value": "Jose Antunes"
+    }]
+  }, {
+    "id": "76f52d90-2e24-4c55-9343-b8586a7a0869",
+    "name": "Services Requests Part1",
+    "commands": [{
+      "id": "fa96a3b0-a00c-4969-9a5f-8b68d5d8c347",
+      "comment": "",
+      "command": "open",
+      "target": "https://affapple.github.io/LugWheels/masapp/HTML/services.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d607e353-dbef-4520-ba0c-904f721f589f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "787x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12e21b4d-52c4-428d-9c72-95e37d149fc0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-dark:nth-child(1)",
+      "targets": [
+        ["css=.btn-dark:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button mb-3']", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Start Lugwheels')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d47a8af0-7cda-412d-95fd-d162eb65cffd",
+      "comment": "",
+      "command": "click",
+      "target": "id=nBags1",
+      "targets": [
+        ["id=nBags1", "id"],
+        ["css=#nBags1", "css:finder"],
+        ["xpath=//input[@id='nBags1']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11df95f6-64dc-40c7-8a21-7db292dfec75",
+      "comment": "",
+      "command": "type",
+      "target": "id=nBags1",
+      "targets": [
+        ["id=nBags1", "id"],
+        ["css=#nBags1", "css:finder"],
+        ["xpath=//input[@id='nBags1']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "f850b926-6442-4949-9309-45912a6cb23c",
+      "comment": "",
+      "command": "click",
+      "target": "id=pickPlace1",
+      "targets": [
+        ["id=pickPlace1", "id"],
+        ["css=#pickPlace1", "css:finder"],
+        ["xpath=//select[@id='pickPlace1']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/div/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df8e419b-e612-432e-b9d2-f32066393839",
+      "comment": "",
+      "command": "select",
+      "target": "id=pickPlace1",
+      "targets": [],
+      "value": "label=Airport Humberto Delgado"
+    }, {
+      "id": "67fdab61-f8d3-4451-921d-a28b611cd6a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropPlace1",
+      "targets": [
+        ["id=dropPlace1", "id"],
+        ["css=#dropPlace1", "css:finder"],
+        ["xpath=//select[@id='dropPlace1']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/div/div[5]/select", "xpath:idRelative"],
+        ["xpath=//div[5]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad5d82fb-1069-4495-8f21-009307f3032a",
+      "comment": "",
+      "command": "select",
+      "target": "id=dropPlace1",
+      "targets": [],
+      "value": "label=Hotel A.S"
+    }, {
+      "id": "e7cf5739-4ab1-4e21-a233-b5a043701451",
+      "comment": "",
+      "command": "click",
+      "target": "id=send",
+      "targets": [
+        ["id=send", "id"],
+        ["css=#send", "css:finder"],
+        ["xpath=//button[@id='send']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'SEND')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14f2493b-4819-477e-bbcc-068ac948a761",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-dark:nth-child(1)",
+      "targets": [
+        ["css=.btn-dark:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button mb-3']", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Start Lugwheels')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7eb88a26-61ab-486d-9ee8-50d194a458ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.myinfo:nth-child(1)",
+      "targets": [
+        ["css=.myinfo:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2450e84f-207d-472e-bba1-12f8d8c62a8d",
+      "comment": "",
+      "command": "click",
+      "target": "id=nBags1",
+      "targets": [
+        ["id=nBags1", "id"],
+        ["css=#nBags1", "css:finder"],
+        ["xpath=//input[@id='nBags1']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4aa29fe-5002-4ba3-9d80-979d7e63def5",
+      "comment": "",
+      "command": "type",
+      "target": "id=nBags1",
+      "targets": [
+        ["id=nBags1", "id"],
+        ["css=#nBags1", "css:finder"],
+        ["xpath=//input[@id='nBags1']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "6"
+    }, {
+      "id": "16226947-0696-4e80-8817-7948db74a304",
+      "comment": "",
+      "command": "click",
+      "target": "id=pickPlace1",
+      "targets": [
+        ["id=pickPlace1", "id"],
+        ["css=#pickPlace1", "css:finder"],
+        ["xpath=//select[@id='pickPlace1']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/div/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf9ef4ca-fdaf-4989-8f90-4cc92bb57dd6",
+      "comment": "",
+      "command": "select",
+      "target": "id=pickPlace1",
+      "targets": [],
+      "value": "label=Airport Francisco Sá Carneiro"
+    }, {
+      "id": "0690a5a5-04fd-4823-b815-343e77fd1636",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropPlace1",
+      "targets": [
+        ["id=dropPlace1", "id"],
+        ["css=#dropPlace1", "css:finder"],
+        ["xpath=//select[@id='dropPlace1']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/div/div[5]/select", "xpath:idRelative"],
+        ["xpath=//div[5]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a4ba3b4-a18f-43e0-95d8-35ceaa13e7c8",
+      "comment": "",
+      "command": "select",
+      "target": "id=dropPlace1",
+      "targets": [],
+      "value": "label=Hotel A.S"
+    }, {
+      "id": "b52f166a-74d3-470f-b0d3-314083a12d33",
+      "comment": "",
+      "command": "click",
+      "target": "id=send",
+      "targets": [
+        ["id=send", "id"],
+        ["css=#send", "css:finder"],
+        ["xpath=//button[@id='send']", "xpath:attributes"],
+        ["xpath=//div[@id='ModalForm']/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'SEND')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ae7c841-c3b9-424c-9bd6-6e279d5b3b4c",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b691794a-4f57-42a9-9f2d-26604b2a7077",
+    "name": "ServiceRequest Part2",
+    "commands": [{
+      "id": "4fc28328-b697-4e81-8f86-92dbf9943657",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#\\30 > td:nth-child(1)",
+      "targets": [
+        ["css=#\\30 > td:nth-child(1)", "css:finder"],
+        ["xpath=//tr[@id='0']/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Airport Humberto Delgado')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b890b8f-cae1-42f6-b582-8dc0085b0d36",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#\\31 > td:nth-child(1)",
+      "targets": [
+        ["css=#\\31 > td:nth-child(1)", "css:finder"],
+        ["xpath=//tr[@id='1']/td", "xpath:idRelative"],
+        ["xpath=//tr[2]/td", "xpath:position"],
+        ["xpath=//td[contains(.,'Airport Francisco Sá Carneiro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2e1f7ce-1822-4584-814f-e67ba61fdb54",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@type='check']",
+      "targets": [
+        ["xpath=//button[@type='check']", "xpath:attributes"],
+        ["xpath=//tr[@id='0']/td[3]/button", "xpath:idRelative"],
+        ["xpath=//td[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ba6661c-6ed7-4403-a668-bc8bc26bb908",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=td:nth-child(2)",
+      "targets": [
+        ["css=td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[@id='0']/td[2]", "xpath:idRelative"],
+        ["xpath=//td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'Airport Humberto Delgado')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a6ce9d3-4b3d-48b3-b283-0cc0b8288adf",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=td:nth-child(3)",
+      "targets": [
+        ["css=td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[@id='0']/td[2]", "xpath:idRelative"],
+        ["xpath=//td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'Airport Humberto Delgado')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "267b6f84-95cd-48e5-9992-cb1273095782",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-5 > span:nth-child(1)",
+      "targets": [
+        ["css=.col-5 > span:nth-child(1)", "css:finder"],
+        ["xpath=//tr[@id='0']/td[3]/span", "xpath:idRelative"],
+        ["xpath=//td[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'2022-12-12')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "60f9d764-9bfc-4797-909a-f644f69548dd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.modal-content",
+      "targets": [
+        ["css=.modal-content", "css:finder"],
+        ["xpath=//div[@id='modal_0']/div/div", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28bcfa36-d6c9-4b1f-9083-c4fb9d8d60fe",
+      "comment": "",
+      "command": "click",
+      "target": "id=modal_0",
+      "targets": [
+        ["id=modal_0", "id"],
+        ["css=#modal_0", "css:finder"],
+        ["xpath=//div[@id='modal_0']", "xpath:attributes"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fb48dc56-7a16-45d7-a8d2-2f530ea1ee93",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["381d0134-2648-4721-813d-1636f6858302"]
+  }],
+  "urls": ["https://affapple.github.io/", "https://affapple.github.io/LugWheels/masapp/HTML/Driver.html"],
+  "plugins": []
+}
