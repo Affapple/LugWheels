@@ -100,7 +100,7 @@ $(document).ready(function () {
             servicos = []
         }
         var name = localStorage.n2
-        if (localStorage.n2 == "" ||  localStorage.n2 == undefined){
+        if (name == "" ||  name == undefined){
             name = "Client's Names"
         }
         var Aeroporto = $('#pickPlace1 option:selected').text();
