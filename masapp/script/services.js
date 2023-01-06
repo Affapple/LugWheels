@@ -97,7 +97,7 @@ $(document).ready(function () {
         if (servicos == null) {
             servicos = []
         }
-        var name = localStorage.getItem('n2')
+        var name = localStorage.getItem('ni1')
         if (name == null){
             name = "Client's Names"
         }
